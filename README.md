@@ -1,7 +1,7 @@
 # validationFormExpress
 Валидация простой формы и вывод данных с помощью сервера express
 
-- Валидация формы на HTML5, CSS3, JQ, Gulp, Express
+- Валидация формы на HTML5, Sass, JQ, Gulp, Express
 
 Запуск проекта:
 
