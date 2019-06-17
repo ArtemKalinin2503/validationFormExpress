@@ -298,5 +298,13 @@ input[type='number'] {
 	-moz-appearance: textfield;
 }
 
+//Скрываем иконки в input в safari 
+::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
 //Стили для checkbox Запомнить
 @include checkbox;
