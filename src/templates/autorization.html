@@ -1,8 +1,27 @@
 <div class="autorization__wrapper">
-  <form name="autorization" class="autorization__form">
-    <input type="phone" name="phone" class="autorization__input autorization__input_phone" placeholder="Введите телефон" />
-    <input type="password" name="password" class="autorization__input autorization__input_password" placeholder="Введите пароль" />
-    <input type="submit" class="autorization__button" value="Войти">
-  </form>
-  <div id="dataForm"></div>
+    <div class="autorization__block">
+      <a href="#" class="autorization__link-back">Вернуться</a>
+      <img src="img/logo-autorization.svg" class="autorization__logo" />
+      <form name="autorization" class="autorization__form">
+        <div class="autorization__form-item-phone">
+          <input type="tel" name="phone" class="autorization__input autorization__input_phone" placeholder="Номер телефона" title="Разрешены только цифры" required />
+        </div>
+        <div class="autorization__form-item-password">
+          <input type="password" name="password" class="autorization__input autorization__input_password" placeholder="Пароль" minlength="5" title="Минимально 5 символов" required/>
+        </div>
+        <div class="autorization__link-block">
+          <div class="autorization__block-checbox">
+            <input type="checkbox" class="autorization__checkbox" name="remember" id="remember" />
+            <label for="remember" class="autorization__label"><span class="autorization__label-text">Запомнить</span></label>
+          </div>
+          <a href="#" class="autorization__link autorization__link_forgot">Забыл пароль</a>
+        </div>
+        <input type="submit" class="autorization__button" value="Войти">
+      </form>
+    </div>  
+</div>
+<div class="autorization__modal">
+  <p class="autorization__modal-text autorization__modal-text_title">Ответ формы</p>
+  <p id="dataForm" class="autorization__modal-text"></p>
+  <button class="autorization__button-close">X</button>
 </div>
